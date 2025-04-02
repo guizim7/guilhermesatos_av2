@@ -1,33 +1,20 @@
 // 10, 11 e 12
-let aluno = ("guilherme santos oliveira ")
-var media, nota1, nota2, nota3 ;
-nota1= prompt ("Digite sua  primeira nota:");
-nota2= prompt ("Digite sua segunda nota:");
-nota3= prompt ("Digite sua terceira nota:"); 
-media = (nota1 + nota2 + nota3)/3 ; 
-if ( media >= 180) 
-  {
-console.log ("Aprovado");
-  } 
-else 
-{ 
-if( media <= 179) 
-  {
-  console.log("Reprovado");
-  }
-}
+var media, nota1, nota2, nota3;
 
-frequencia= prompt("Digite sua frequencia");
+for(i=0; i<=2; i++){
+  nota1= Number(prompt ("Digite sua primeira nota:"));
+  nota2= Number(prompt ("Digite sua segunda nota:"));
+  nota3= Number(prompt ("Digite sua terceira nota:")); 
+  media = (nota1 + nota2 + nota3)/3; 
 
+  alert("sua média é "+media)
+  
+  frequencia= prompt("Digite sua frequencia");
 
-if ( frequencia >= 75) 
-  {
-console.log ("frequencia aprovado");
-  } 
-else 
-{ 
-if( frequencia <= 74) 
-  {
-  console.log("frequencia reprovado");
+  if ( frequencia >= 75 && media >= 60) {
+  alert("aprovado");
+    } 
+  else{
+    alert("reprovado");
   }
 }
